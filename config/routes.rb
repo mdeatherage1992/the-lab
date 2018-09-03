@@ -12,4 +12,13 @@ devise_scope :user do
 end
 
 
+resources :posts do
+  collection do
+    get 'hobby'
+    get 'study'
+    get 'team'
+  end
+end
+
+
 end
